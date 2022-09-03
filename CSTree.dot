@@ -1,0 +1,178 @@
+graph Tree{
+	/* ----------------------------------------------------------------------------------------- */
+	/*                                 Atributos del grafo entero                                */
+	/* ----------------------------------------------------------------------------------------- */
+	label="Árbol genealógico de las Ciencias de la Computación"
+	// bgcolor="transparent"
+	/* ----------------------------------------------------------------------------------------- */
+	/*                                   IDs con sus atributos                                   */
+	/* ----------------------------------------------------------------------------------------- */
+	/* --------------------------------------- Nodo raíz --------------------------------------- */
+	"CIENCIAS DE LA COMPUTACIÓN"	[penwidth=4 shape="oval" style="filled" fillcolor="lightgrey" color="black"]
+	/* ------------------- 3 grandes áreas de las ciencias de la computación ------------------- */
+	"Ciencias de la\ncomputación teórica"	[penwidth=4 shape="egg" style="filled" fillcolor="lightgray" color="darkgreen"]
+	"Sistemas informáticos y\nprocesos computacionales"	[penwidth=4 shape="egg" style="filled" fillcolor="lightgray" color="red"]
+	"Ciencias de la\ncomputación aplicadas"	[penwidth=4 shape="egg" style="filled" fillcolor="lightgray" color="blue"]
+	/* -------- Grafo en forma de árbol de las áreas de las ciencias de la computación: -------- */
+	"CIENCIAS DE LA COMPUTACIÓN" -- {
+		"Ciencias de la\ncomputación teórica"
+		"Sistemas informáticos y\nprocesos computacionales"
+		"Ciencias de la\ncomputación aplicadas"
+	} [color="black" penwidth=4 minlen=3]
+
+
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------------------------------------------------------------------------------- */
+	/*                          Subáreas de las ciencias computacionales                         */
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------------------------------------------------------------------------------- */
+
+	/* ------------------- Subáreas de las ciencias de la computación teórica ------------------ */
+	"Teoría de la computación"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	"Teoría de la información\ny la codificación"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	"Estructuras de datos\ny algoritmos"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	"Teoría de lenguajes\nde programación\ny\nmétodos formales"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+
+	"Ciencias de la\ncomputación teórica" -- {
+		"Teoría de la computación"
+		"Teoría de la información\ny la codificación"
+		"Estructuras de datos\ny algoritmos"
+		"Teoría de lenguajes\nde programación\ny\nmétodos formales"
+	} [color="darkgreen" penwidth=3 minlen=3]
+
+	/* -------------------------- Subáreas de teoría de la computación ------------------------- */
+	"Teoría de la computación" -- {
+		"Teoría de\nlos Autómatas"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Lenguajes\nFormales"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría de la\nComputabilidad"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría de la\nComplejidad\nComputacional"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Modelos\nde\nComputación"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría de la\nComputación\nCuántica"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría del\nCircuito\nLógico"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Autómata\nCelular"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	} [color="darkgreen" minlen=3]
+
+	/* --------------- Subáreas de la teoría de la informacioón y la codificación -------------- */
+	"Teoría de la información\ny la codificación" -- {
+		"Teoría de la\nCodificación"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Capacidad\nde\nCanal"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría de\nla Información\nAlgorítmica"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría de\nDetección\nde Señales"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Complejidad\nde\nKolmogorov"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	} [color="darkgreen" minlen=3]
+
+	/* --------------------- Subáreas de estructuras de datos y algoritmos --------------------- */
+	"Estructuras de datos\ny algoritmos" -- {
+		"Análisis\nde\nAlgoritmos"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Diseño\nde\nAlgoritmos"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Estructuras\nde Datos"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Optimización\nCombinatoria"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Geometría\nComputacional"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Algoritmos\nAleatorizados"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	} [color="darkgreen" minlen=3]
+
+	/* --------- Subáreas de la teoría de lenguajes de programación y métodos formales --------- */
+	"Teoría de lenguajes\nde programación\ny\nmétodos formales" -- {
+		"Semántica\nFormal"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Teoría\nde\nTipos"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Diseño\ndel\nCompilador"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Lenguajes\nde\nProgramación"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Verificación\nFormal"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+		"Demostración\nAutomática\nde Teoremas"	[shape="box" style="filled" fillcolor="lightgray" color="darkgreen"]
+	} [color="darkgreen" minlen=3]
+
+
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------------------------------------------------------------------------------- */
+	/* ------------ Subáreas de los sistemas informáticos y procesos computacionales ----------- */
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------------------------------------------------------------------------------- */
+	"Sistemas informáticos y\nprocesos computacionales" -- {
+		"Inteligencia\nartificial"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Organización y\narquitectura de\ncomputadoras"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Computación\nconcurrente,\nparalela y\ndistribuida"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Redes de\ncomputadoras"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Seguridad\ninformática\ny criptografía"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Bases de datos\ny\nminería de datos"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Gráficos por\ncomputadora\ny visualización"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Procesamiento\nde imagen\ny sonido"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="red"]
+	} [color="red" penwidth=3 minlen=3]
+
+	/* -------------------------- Subáreas de inteligencia artificial -------------------------- */
+	"Inteligencia\nartificial" -- {
+		"Teoría del\nAprendizaje\nComputacional"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Visión\npor\nComputador"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Redes\nNeuronales"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Planificación\ny\nProgramación"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Procesamiento\nde\nLenguaje Natural"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Teoría de Juegos\nComputacionales"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Computación\nEvolutiva"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Computación\nAutónoma"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Representación\ny\nRazonamiento"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Reconocimiento\nde\nPatrones"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Robótica"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Inteligencia\nde\nEnjambre"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+	} [color="red" minlen=3]
+
+	/* ---------------- Subáreas de organización y arquitectura de computadoras ---------------- */
+	"Organización y\narquitectura de\ncomputadoras" -- {
+		"Unidad\nde\nProcesamiento"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Microarquitectura"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Multiprocesamiento"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Diseño del\nProcesador"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Computación\nUbicua"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Arquitectura\nde Sistemas"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Sistemas\nOperativos"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Entradas\ny\nSalidas"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Sistemas\nEmbebidos\no\nIntegrados"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Computación en\nTiempo Real"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Confiabilidad"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Intérpretes"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+	} [color="red" minlen=3]
+
+	/* ------------------ Subáreas de gráficos por computadora y visualización ----------------- */
+	"Gráficos por\ncomputadora\ny visualización" -- {
+		"Gráficos 2D\npor\nComputadora"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Animación\npor\nComputadora"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Renderizado"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Realidad\nMixta"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Realidad\nVirtual"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Modelado\nSólido"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+	} [color="red" minlen=3]
+
+	/* ---------------------- Subáreas de procesamiento de imagen y sonido --------------------- */
+	"Procesamiento\nde imagen\ny sonido" -- {
+		"Algoritmos FFT\n(Fast Fourier\nTransform)"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Procesamiento\nde Imágenes"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Reconocimiento\nde Voz"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Compresión\nde Datos"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Computación de\nImagen Médica"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+		"Síntesis\nde Voz"	[shape="box" style="filled" fillcolor="lightgray" color="red"]
+	} [color="red" minlen=3]
+
+
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------- Subáreas de las ciencias de la computación aplicadas: ----------------- */
+	/* ----------------------------------------------------------------------------------------- */
+	/* ----------------------------------------------------------------------------------------- */
+	"Ciencias de la\ncomputación aplicadas" -- {
+		"Ciencias computacionales,\nfinanzas e ingeniería"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Computación social\ne interacción\nhumano-computadora"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Ingeniería\nde\nsoftware"	[penwidth=3 shape="box" style="filled" fillcolor="lightgray" color="blue"]
+	} [color="blue" penwidth=3 minlen=3]
+
+	/* ------------ Subáreas de las ciencias computacionales, finanzas e ingeniería ------------ */
+	"Ciencias computacionales,\nfinanzas e ingeniería" -- {
+		"Análisis\nnumérico"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Física\ncomputacional"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Química\ncomputacional"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Bioinformática"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Neuroinformática"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Psicoinformática"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Informática\nMédica"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Ingeniería\ncomputacional"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+		"Musicología\ncomputacional"	[shape="box" style="filled" fillcolor="lightgray" color="blue"]
+	} [color="blue" minlen=3]
+
+}
